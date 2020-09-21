@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: darkblue;
+}
+
+.listnav{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	display: flex;
+}
+
+.listnav li a{
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.listnav li a .a {
+	fill: #fff;
+}
+
+.listnav .a,
+.listnav li a .c {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.listnav li a .c {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: all .4s ease;
+}
+
+.listnav li a:hover .c,
+.listnav li a.active .c{
+	fill: #F9575C;
+	stroke: #F9575C;
+}
